@@ -7,10 +7,11 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             height: 100vh;
-            background-image: url('./B.jpg'); /* Replace with the image URL */
-            background-size: cover;
+            background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a1807b30-cbe9-4b5b-b209-802335deefb3.png'), linear-gradient(to bottom, #2c3e50, #000000);
+            background-size: auto, cover;
+            background-blend-mode: overlay;
             background-position: center;
             display: flex;
             flex-direction: column;
@@ -21,12 +22,14 @@
         }
         h1 {
             font-size: 3em;
-            margin-bottom: 30px;
-            align-items: center;
-        
-            Border:30px;
-            background-image: url('./B.jpg');
-            color:green;
+            margin-bottom: 10px;
+            color: #FFD700; /* Gold color for the title */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .subtitle {
+            font-size: 2em;
+            color: #FFFFFF; /* White color for the subtitle */
+            margin-bottom: 20px;
         }
         .start-button {
             padding: 15px 30px;
@@ -37,34 +40,45 @@
             cursor: pointer;
             border-radius: 5px;
             transition: background-color 0.3s;
+            text-decoration: none; /* Remove underline from link */
+            display: inline-block; /* Make the link behave like a button */
         }
         .start-button:hover {
             background-color: #45a049;
         }
-        c{
-            color :blue;
+        .chess-icon {
+            width: 100px;
+            margin: 0 15px;
+            filter: drop-shadow(0 0 5px rgba(255,215,0,0.7));
         }
-        b{
-            font-size: 3em;
-            background-image: url('./B.jpg');
-            color:green;
+        .chess-pieces {
+            display: flex;
+            margin: 20px 0;
         }
-        p{
-            
-            font-size: 6em;
-            background-image: url('./B.jpg');
-            color:green;
+        .tagline {
+            font-style: italic;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #FFD700;
+        }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            font-size: 0.8em;
+            color: #FFFFFF; /* White color for footer text */
         }
     </style>
 </head>
 <body>
-    <center >
-        <h1>Welcome </h1>
-        
-       <i><p>To</p></i>
-       
-        <b>CHESS GAME </b>
-        <h1></h1></center>
-    <a class="start-button" href="game.html">Start Game</a>
+    <h1>♔ Welcome Chess Champions ♚</h1>
+    <div class="subtitle">To the Ultimate Battle of Wits</div>
+    <b style="font-size: 4em; color: #FFD700;">CHESS GAME</b>
+    <div class="chess-pieces">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/eaa394dd-906b-4fea-ad02-edad24a766cb.png" alt="White King" class="chess-icon">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/33d496eb-504d-4beb-9c10-0b5adebf0164.png" alt="Black Queen" class="chess-icon">
+    </div>
+    <p class="tagline">A Game of Strategy Since the 6th Century</p>
+    <a class="start-button" href="game.html">♟️ Begin Your Match ♟️</a>
+    <div class="footer">© 2023 Chess Game. All rights reserved.</div>
 </body>
 </html>
